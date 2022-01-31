@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============ FIVICON ============ -->
+  <link rel="shortcut icon" href="./assets/svg/favicon.ico" type="image/x-icon">
+  <!-- ============ STYLES ============ -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>js30#1.3-custom-video</title>
+</head>
+<body>
+  <div class="video__overlay"></div>
+  <main class="main">
+    <!-- ============ DARK THEME ============ -->
+    <button class="dark-theme">
+      <img class="dark-theme__icon" src="./assets/svg/switch-theme.svg" alt="Dark theme mode">
+    </button>
+    <!-- ============ VIDEO ============ -->
+    <section class="video section" id="video">
+      <div class="container">
+
+        <div class="title__wrapper">
+          <h2 class="video__title title">Video</h2>
+        </div>
+        <div class="video__inner">
+
+          <div class="video__player player">
+            <div class="player__video-inner">
+              <button class="player__close player__icon"></button>
+              <button class="player__play-video-btn player__icon"></button>
+              <video class="player__video" src="./assets/video/video.mp4" playsinline></video>
+              <div class="player__progress">
+                <div class="player__progress-bar"></div>
+              </div>
+            </div>
+            <div class="player__controls-btns">
+              <div class="player__left-btns">
+                <button class="player__play-btn player__icon" title="Play"></button>
+                <div class="player__volume-btns">
+                  <button class="player__volume-btn player__icon" title="Sound on"></button>
+                  <div class="player__volume-line" title="Change volume">
+                    <div class="player__volume-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="player__right-btns">
+                <div class="player__speed" title="Playback rate">
+                  <select class="player__speed-select " name="playbackRate">
+                    <option value="0.5">0.5 x</option>
+                    <option value="0.75">0.75 x</option>
+                    <option value="1" selected="selected">1 x</option>
+                    <option value="1.5">1.5 x</option>
+                    <option value="2.0">2.0 x</option>
+                  </select>
+                </div>
+                <div class="player__time">
+                  <span class="player__time-elapsed">00<span class="player__time-slash">/</span></span><span class="player__time-duration">00</span>
+                </div>
+                <button class="player__fullscreen player__icon"></button>
+              </div>
+            </div>
+          </div>
+
+          <img class="video__img" src="./assets/img/video-player.jpg" alt="Pair">
+          <button class="video__btn">
+            <svg class="video__btn-icon icon">
+              <use xlink:href="./assets/svg/sprite.svg#play"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copyright">
+            &copy;
+            <span id="copyright">
+              2022
+            </span>
+            <a class="footer__my-github" href="https://github.com/greg-front-end">github
+            </a>
+          </div>
+          <div class="footer__rsschool-link">
+            <a class="footer__rss-link" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
