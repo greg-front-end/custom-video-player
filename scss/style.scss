@@ -130,9 +130,6 @@ textarea {
 .main {
     position: relative;
 }
-.section {
-  margin-top: 50px;
-}
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -261,9 +258,7 @@ body.dark {
 .dark-theme {
   // .dark-theme__icon
   background-color: transparent;
-  position: absolute;
-  left: 20px;
-  top: 20px;
+  padding: 20px 0;
   &__icon {
     transition: all 0.5s;
   }
